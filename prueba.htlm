@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Inmobiliaria</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* HEADER FIJO */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+header a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+/* SECCIONES */
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-top: 60px;
+  background: white;
+  padding: 60px 20px;
+  border-radius: 8px;
+}
+
+/* BOTONES */
+.btn {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 12px 18px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+/* GRID PROPIEDADES */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+/* CONTACTO */
+.contacto {
+  background: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* WHATSAPP FLOTANTE */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div><strong>Inmobiliaria</strong></div>
+  <div>
+    <a href="#inicio">Inicio</a>
+    <a href="#propiedades">Propiedades</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</header>
+
+<!-- INICIO -->
+<section id="inicio" class="hero">
+  <h1>Propiedades en venta y alquiler</h1>
+  <p>Encontrá tu próxima propiedad de forma rápida y directa</p>
+  <a href="#propiedades" class="btn">Ver propiedades</a>
+</section>
+
+<!-- PROPIEDADES -->
+<section id="propiedades">
+  <h2>Propiedades</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300">
+      <div class="card-content">
+        <h3>Casa en Palermo</h3>
+        <p>$120.000</p>
+        <p>3 ambientes</p>
+        <a class="btn" href="propiedad-palermo.html">Ver propiedad</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300">
+      <div class="card-content">
+        <h3>Depto en Ramos Mejía</h3>
+        <p>$80.000</p>
+        <p>2 ambientes</p>
+        <a class="btn" href="propiedad-ramos.html">Ver propiedad</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300">
+      <div class="card-content">
+        <h3>Casa en San Justo</h3>
+        <p>$95.000</p>
+        <p>4 ambientes</p>
+        <a class="btn" href="propiedad-san-justo.html">Ver propiedad</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="contacto">
+    <h2>Contacto</h2>
+    <p>Escribinos directamente por WhatsApp</p>
+
+    <a class="btn"
+       href="https://wa.me/5491123456789?text=Hola,%20quiero%20más%20información"
+       target="_blank">
+       Contactar por WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- WHATSAPP FLOTANTE -->
+<a class="whatsapp"
+   href="https://wa.me/5491123456789?text=Hola,%20quiero%20consultar%20por%20una%20propiedad"
+   target="_blank">
+   WhatsApp
+</a>
+
+</body>
+</html>
