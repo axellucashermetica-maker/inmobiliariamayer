@@ -5,83 +5,121 @@
   <title>Inmobiliaria Mayer</title>
 
   <style>
-    body {<header class="navbar">
-  <h2>Inmobiliaria Mayer</h2>
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#propiedades">Propiedades</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
-      font-family: Arial;
-      margin: 40px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
       background: #f5f5f5;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: darkblue;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    .navbar a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* CONTENIDO */
+    .container {
+      padding: 30px;
     }
 
     h1 {
       color: darkblue;
     }
 
+    /* PROPIEDADES */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
     .propiedad {
       background: white;
       padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
+    /* BOTON */
     .boton {
       display: inline-block;
-      padding: 10px;
+      padding: 12px;
       background: green;
       color: white;
       text-decoration: none;
+      border-radius: 5px;
       margin-top: 10px;
     }
-    .navbar {
-  position: sticky;
-  top: 0;
-  background: darkblue;
-  color: white;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar a {
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
   </style>
 </head>
 
 <body>
 
-  <h1>Inmobiliaria Mayer</h1>
-  <p>Venta y alquiler de propiedades en Caseros</p>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h2>Inmobiliaria Mayer</h2>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#propiedades">Propiedades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-  <h2 id="propiedades">Propiedades</h2>
+  <div class="container">
 
-  <div class="propiedad">
-    <h3>Casa en venta</h3>
-    <p>3 ambientes - Caseros</p>
-    <p>USD 80.000</p>
+    <h1>Venta y alquiler de propiedades</h1>
+    <p>Caseros, Villa Bosch y alrededores</p>
+
+    <!-- PROPIEDADES -->
+    <h2 id="propiedades">Propiedades</h2>
+
+    <div class="grid">
+
+      <div class="propiedad">
+        <h3>Casa en venta</h3>
+        <p>3 ambientes - Caseros</p>
+        <p>USD 80.000</p>
+      </div>
+
+      <div class="propiedad">
+        <h3>Departamento en alquiler</h3>
+        <p>2 ambientes - Villa Bosch</p>
+        <p>$300.000</p>
+      </div>
+
+      <div class="propiedad">
+        <h3>PH en venta</h3>
+        <p>4 ambientes - Santos Lugares</p>
+        <p>USD 120.000</p>
+      </div>
+
+    </div>
+
+    <!-- CONTACTO -->
+    <h2 id="contacto">Contacto</h2>
+
+    <a class="boton" href="https://wa.me/5491150284113">
+      Contactar por WhatsApp
+    </a>
+
   </div>
-
-  <div class="propiedad">
-    <h3>Departamento en alquiler</h3>
-    <p>2 ambientes - Villa Bosch</p>
-    <p>$300.000</p>
-  </div>
-
-  <h2 id="contacto">Contacto</h2>
-  <a class="boton" href="https://wa.me/5491150284113">Contactar por WhatsApp</a>
 
 </body>
 </html>
