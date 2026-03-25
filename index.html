@@ -2,30 +2,16 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title><h2 class="logo">
-  <span class="light">INMOBILIARIA</span>
-  <span class="bold">MAYER</span>
-</h2></title>
-<link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap" rel="stylesheet">
+  <title>Inmobiliaria Mayer</title>
+
+  <!-- Fuente Carlito -->
+  <link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       background: #f5f5f5;
-      .logo {
-  margin: 0;
-  color: white;
-  font-family: 'Carlito', sans-serif;
-}
-
-.logo .light {
-  font-weight: 400;
-  margin-right: 5px;
-}
-
-.logo .bold {
-  font-weight: 700;
-}
+      font-family: 'Carlito', sans-serif;
     }
 
     /* NAVBAR */
@@ -40,11 +26,27 @@
       top: 0;
     }
 
+    .logo {
+      margin: 0;
+      color: white;
+      font-family: 'Carlito', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .logo .light {
+      font-weight: 400;
+      margin-right: 5px;
+    }
+
+    .logo .bold {
+      font-weight: 700;
+    }
+
     .navbar a {
       color: white;
       margin-left: 20px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 700;
     }
 
     .navbar a:hover {
@@ -57,7 +59,7 @@
     }
 
     h1 {
-      color: darkblue;
+      color: #006B5E;
     }
 
     /* PROPIEDADES */
@@ -78,11 +80,12 @@
     .boton {
       display: inline-block;
       padding: 12px;
-      background: green;
+      background: #006B5E;
       color: white;
       text-decoration: none;
       border-radius: 5px;
       margin-top: 10px;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -91,7 +94,11 @@
 
   <!-- NAVBAR -->
   <header class="navbar">
-    <h2>Inmobiliaria Mayer</h2>
+    <h2 class="logo">
+      <span class="light">INMOBILIARIA</span>
+      <span class="bold">MAYER</span>
+    </h2>
+
     <nav>
       <a href="#">Inicio</a>
       <a href="#propiedades">Propiedades</a>
@@ -132,7 +139,7 @@
     <!-- CONTACTO -->
     <h2 id="contacto">Contacto</h2>
 
-    <a class="boton" href="https://wa.me/5491150284113">
+    <a class="boton" href="https://wa.me/5491112345678">
       Contactar por WhatsApp
     </a>
 
