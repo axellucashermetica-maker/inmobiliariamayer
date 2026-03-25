@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Casa en Caseros</title>
+  <title>Consultas - Inmobiliaria Mayer</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap" rel="stylesheet">
 
@@ -19,23 +19,52 @@
       padding: 15px 30px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      margin: 0;
+      color: white;
+    }
+
+    .logo .light {
+      font-weight: 400;
+    }
+
+    .logo .bold {
+      font-weight: 700;
+    }
+
+    .navbar a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 700;
     }
 
     .container {
       padding: 30px;
+      max-width: 600px;
+      margin: auto;
     }
 
-    img {
+    input, textarea {
       width: 100%;
-      border-radius: 10px;
-      margin-bottom: 10px;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
     }
 
-    iframe {
-      width: 100%;
-      height: 300px;
-      border-radius: 10px;
-      margin-top: 20px;
+    button {
+      background: #006B5E;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
     }
   </style>
 </head>
