@@ -66,9 +66,60 @@
       font-weight: bold;
       cursor: pointer;
     }
+
+.carrusel {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.carrusel img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+    
   </style>
 </head>
+  
+<script>
+  let imagenes = ["casa1.jpg", "casa2.jpg", "casa3.jpg"];
+  let indice = 0;
 
+  function mostrarImagen() {
+    document.getElementById("imagen").src = imagenes[indice];
+  }
+
+  function siguiente() {
+    indice = (indice + 1) % imagenes.length;
+    mostrarImagen();
+  }
+
+  function anterior() {
+    indice = (indice - 1 + imagenes.length) % imagenes.length;
+    mostrarImagen();
+  }
+</script>
+  
 <body>
 
 <header class="navbar">
