@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consultas - Inmobiliaria Mayer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: #f5f5f5;
+      font-family: 'Carlito', sans-serif;
+    }
+
+    .navbar {
+      background: #006B5E;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      margin: 0;
+      color: white;
+    }
+
+    .logo .light {
+      font-weight: 400;
+    }
+
+    .logo .bold {
+      font-weight: 700;
+    }
+
+    .navbar a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #006B5E;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <h2 class="logo">
+    <span class="light">INMOBILIARIA</span>
+    <span class="bold">MAYER</span>
+  </h2>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="propiedades.html">Propiedades</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="consultas.html">Hacer una consultas</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <h1>Enviar consulta</h1>
+
+  <form name="contacto" method="POST" netlify>
+
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+
+    <input type="email" name="email" placeholder="Tu email" required>
+
+    <textarea name="mensaje" placeholder="Escribí tu consulta..." required></textarea>
+
+    <button type="submit">Enviar</button>
+
+  </form>
+
+</div>
+
+</body>
+</html>
