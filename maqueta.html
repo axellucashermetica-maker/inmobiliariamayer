@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inmobiliaria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .btn {
+      background: black;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: white;
+    }
+
+    .hero h1 {
+      margin-bottom: 10px;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .property {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      margin-top: 15px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">Inmobiliaria</div>
+  <a class="btn" href="#propiedades">Ver propiedades</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Propiedades en venta y alquiler</h1>
+  <p>Encontrá tu próxima propiedad</p>
+  <br>
+  <a class="btn" href="#propiedades">VER PROPIEDADES</a>
+</section>
+
+<!-- LISTADO -->
+<section class="container" id="propiedades">
+  <h2>Propiedades</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300">
+      <div class="card-content">
+        <h3>Casa en Palermo</h3>
+        <p>$120.000</p>
+        <p>3 ambientes</p>
+        <a class="btn" href="#detalle">Ver</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300">
+      <div class="card-content">
+        <h3>Depto en Ramos Mejía</h3>
+        <p>$80.000</p>
+        <p>2 ambientes</p>
+        <a class="btn" href="#detalle">Ver</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DETALLE PROPIEDAD -->
+<section class="container" id="detalle">
+  <div class="property">
+    <h2>Casa en Palermo</h2>
+    <h3>$120.000</h3>
+
+    <img src="https://via.placeholder.com/800x400" style="width:100%; border-radius:8px;">
+
+    <p><strong>Ubicación:</strong> Palermo</p>
+    <p><strong>Ambientes:</strong> 3</p>
+    <p><strong>Superficie:</strong> 80 m²</p>
+
+    <p>
+      Hermosa casa con jardín, muy luminosa, ideal para familia.
+    </p>
+
+    <!-- VIDEO -->
+    <iframe src="https://www.youtube.com/embed/3-9dZs7B01U"></iframe>
+
+    <br><br>
+
+    <a class="btn" href="https://wa.me/5491123456789?text=Hola,%20quiero%20consultar%20por%20la%20casa%20en%20Palermo" target="_blank">
+      CONSULTAR POR WHATSAPP
+    </a>
+
+  </div>
+</section>
+
+<!-- BOTÓN FLOTANTE -->
+<a class="whatsapp" href="https://wa.me/5491123456789?text=Hola,%20quiero%20consultar%20por%20una%20propiedad" target="_blank">
+  WhatsApp
+</a>
+
+</body>
+</html>
